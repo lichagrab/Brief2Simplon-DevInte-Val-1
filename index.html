@@ -18,19 +18,19 @@
                 <TR>
                     <TD>Nom</TD>
                     <TD>
-                        <INPUT type=text name="nom">
+                        <INPUT type=text name="nom" required>
                     </TD>
                 </TR>
                 <TR>
                     <TD>Prénom</TD>
                     <TD>
-                        <INPUT type=text name="prenom">
+                        <INPUT type=text name="prenom" required>
                     </TD>
                 </TR>
                 <TR>
                     <TD>Age</TD>
                     <TD>
-                        <INPUT type=text name="age">
+                        <INPUT type=number name="age" required>
                     </TD>
                 </TR>
                 <TR>
@@ -43,29 +43,28 @@
                 <tr>
                     <TD>Email</TD>
                     <td>
-
-                        <label for="email"></label>
-                        <input id="email" />
+                        <input type="email" name="user_email" required>
+                       
 
                     </td>
                 </tr>
                 <TR>
                     <TD>Adresse</TD>
                     <TD>
-                        <INPUT type=text name="nom">
+                        <INPUT type=text name="nom" required>
                     </TD>
                 </TR>
                 <tr>
                     <TD>Code postal</TD>
                     <td>
-                        <input type="text" name="code postal" size="5" maxlength="5" />
+                        <input type="text" name="code postal" size="5" maxlength="5"pattern="[0-9]{5}" required>
 
                 </tr>
 
                 <TR>
                     <TD>Ville</TD>
                     <TD>
-                        <INPUT type=text name="ville">
+                        <INPUT type=text name="ville" required>
                     </TD>
                 </TR>
 
@@ -80,7 +79,7 @@
                                 <option value="professeur">professeur</option>
                                 <option value="developpeur web">developpeur web</option>
                             </select><br><br>
-                            <input type="submit">
+                           
                       
 
                         <p>Maintenez enfoncé le bouton Ctrl (Windows) / Commande (Mac) pour sélectionner plusieurs
@@ -90,7 +89,7 @@
                 </tr>
 </table>
  <p>Nationalité</p>
-            <select>
+            <select required>
                 <option value="France" selected="selected">France </option>
                 <option value="AFG">Afghane (Afghanistan)</option>
                 <option value="ALB">Albanaise (Albanie)</option>
@@ -291,27 +290,27 @@
                 <option value="ZWE">Zimbabwéenne (Zimbabwe)</option>
             </select>
             <p>Date de naissance</p>
-            <input type="date" name="bdate" />
+            <input type="date" name="bdate" required>
 
             <p>Pays de naissance</p>
-            <input type="text" name="nom">
+            <input type="text" name="nom" required>
 
-            <p>numero de securite sociale</p>
+            <p>numero de securite social</p>
 
-            <label for="numerosecuritesocial">Numéro de sécurité social</label><br>
-            <input id="numerosecuritesocial" size="13" maxlength="13" />
+            <label for="numerosecuritesocial"></label><br>
+            <input type="text"  pattern="[0-9]{1}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{2}" required>
 
             <p>numéro du passeport</p>
             <label for="numerodupasseport"></label><br>
-            <input id="numerodupasseport" size="9" maxlength="9" />
+            <input type="text" id="numerodupasseport"  pattern="[0-9]{2}[A-Z]{2}[0-9]{5}" required>
 
 
             <p>date de délivrance du passeport</p>
-            <input type="date" name="bdate" />
+            <input type="date" name="bdate" required>
 
             <p>Date de validité</p>
-            <input type="date" name="bdate" />
-            <input type="submit" value="Submit">
+            <input type="date" name="bdate"required>
+            <input type="submit" value="envoyer le formulaire.">
 
 
         </form>
